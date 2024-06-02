@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Currency Rates</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Pierwsza strona</string>
+    <string name="second_fragment_label">Druga strona</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="next_page">Next page</string>
+    <string name="currency_exchange">Currency Exchange</string>
+    <string name="from_currency">From currency</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="to_currency">To currency</string>
+    <string name="wykres">Wykres</string>
+    <string name="czyszczenie">Czyszczenie</string>
+    <string name="historical_chart">Historical Chart</string>
+    <string name="days">Last Days</string>
+    <string name="result">Result</string>
+
+    <string-array name="fromCurrency">
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>USD</item>
+        <item>PLN</item>
+        <item>SEK</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>JPY</item>
+    </string-array>
+
+    <string-array name="toCurrency">
+        <item>USD</item>
+        <item>DKK</item>
+        <item>EUR</item>
+        <item>PLN</item>
+        <item>SEK</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>JPY</item>
+    </string-array>
+
+    <string-array name="days_options">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+</resources>
