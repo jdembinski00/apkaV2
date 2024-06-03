@@ -11,15 +11,6 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <Button
-            android:id="@+id/button_second"
-            android:layout_width="168dp"
-            android:layout_height="61dp"
-            android:text="@string/previous"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
@@ -34,24 +25,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/tvShowHistory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/historical_chart"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:textStyle="bold" />
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <Spinner
                     android:id="@+id/spinnerBaseChart"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_height="18dp"
                     android:layout_weight="1" />
 
                 <Spinner
@@ -62,27 +44,48 @@
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/button_second"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="@string/Back" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/buttonStartDate"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/days"
-                    android:textAlignment="center"
-                    android:textSize="25dp"
-                    android:textStyle="bold"/>
+                    android:text="Select Start Date" />
 
-                <Spinner
-                    android:id="@+id/spinnerDays"
-                    android:layout_width="55dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/buttonEndDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Select End Date" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewSelectedDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Dates: "
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/buttonFetchData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fetch Data"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" />
 
             <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/lineChart"

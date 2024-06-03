@@ -5,14 +5,14 @@
     <string name="first_fragment_label">Pierwsza strona</string>
     <string name="second_fragment_label">Druga strona</string>
     <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="Back">Previous</string>
     <string name="next_page">Next page</string>
     <string name="currency_exchange">Currency Exchange</string>
     <string name="from_currency">From currency</string>
     <string name="enter_amount">Enter amount</string>
     <string name="to_currency">To currency</string>
-    <string name="wykres">Wykres</string>
-    <string name="czyszczenie">Czyszczenie</string>
+    <string name="Graph">Graph</string>
+    <string name="Clean">Clean</string>
     <string name="historical_chart">Historical Chart</string>
     <string name="days">Last Days</string>
     <string name="result">Result</string>
